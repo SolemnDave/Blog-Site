@@ -1,6 +1,6 @@
 # Architecture
 
-<img src="src/assets/images/ProjectBlogArch.png" alt="Project Blog Architecture" width="600"/>
+<img src="public/ProjectBlogArch.png" alt="Project Blog Architecture" width="600"/>
 
 ## Table of Contents
 
