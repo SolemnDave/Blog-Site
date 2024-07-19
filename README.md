@@ -1,7 +1,8 @@
 ## Architecture
 
 <img src="public/ProjectBlogArch.png" alt="Project Blog Architecture" width="800"/>
-[View Architecture Detail](public/ProjectBlogArch.txt)
+
+<a href="public/ProjectBlogArch.txt" target="_blank">View Architecture Detail</a>
 
 ## Table of Contents
 
