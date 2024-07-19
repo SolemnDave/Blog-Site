@@ -174,7 +174,7 @@ function Home() {
             <img src="/online-resume.png" alt="HTML5" />
           </a>
           <a
-            href="https://github.com/SolemnDave/Project-Blog"
+            href="https://github.com/SolemnDave/Blog-Site/blob/main/README.md"
             target="_blank"
             rel="noreferrer noopener"
           >
