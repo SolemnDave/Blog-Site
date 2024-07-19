@@ -1,0 +1,53 @@
+Architecture Overview
+
+1. Browser:
+    - The end user accesses the web application through their browser.
+
+2. AWS Route 53:
+    - Route 53 routes end users to the web application by translating the domain name (e.g., blog.solemndave.cloud) into the appropriate IP address.
+    - The ACM (AWS Certificate Manager) integration with Route 53 provides SSL/TLS certificates for securing the connection.
+
+3. AWS CloudFront:
+    - CloudFront caches the content at edge locations globally, providing low latency and high transfer speeds for delivering the web application to users.
+
+4. EC2 Instance (NGINX):
+    - The EC2 instance runs the NGINX web server, which serves the web application files.
+    - The EC2 instance is configured using an Amazon Linux AMI and is managed by Terraform for infrastructure as code deployment.
+    - The NGINX server is responsible for handling incoming requests and serving the web pages to the users.
+
+5. Security Group:
+    - The Security Group allows HTTP (port 80) and HTTPS (port 443) traffic, as well as SSH (port 22) traffic from specific IP addresses for management purposes.
+
+6. IAM (Identity and Access Management):
+    - IAM roles and policies ensure that only authorized users and services can interact with the AWS resources.
+Terraform:
+
+7. Terraform:
+    - The developer (Me) writes Terraform configurations that describe the desired state of the infrastructure.
+These configurations are version-controlled in GitHub, enabling collaboration and tracking of infrastructure changes.
+
+8. GitHub:
+    - The source code for the web application, as well as the Terraform configurations, are stored in a GitHub repository.
+
+
+
+Data Flow
+
+1. User Request:
+    - The user enters the domain name in their browser, initiating a request to the web application.
+
+2. DNS Resolution:
+    - Route 53 resolves the domain name to the IP address of the CloudFront distribution.
+
+3. Content Delivery:
+    - CloudFront caches the content and delivers it from the nearest edge location to the user.
+    - If the content is not in the cache, CloudFront retrieves it from the origin server (EC2 instance).
+
+4. Origin Server:
+    - The EC2 instance running NGINX serves the requested web pages.
+    - The security group ensures that only allowed traffic can reach the EC2 instance.
+
+5. Secure Connection:
+    - AWS Certificate Manager (ACM) provides SSL/TLS certificates to encrypt the connection between the user’s browser and CloudFront, ensuring secure data transmission.
+
+
