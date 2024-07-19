@@ -54,7 +54,7 @@ This project encapsulates the full lifecycle of a modern web application, from d
 
 ## Setup
 
-# 1. **Frontend Development:**
+1.  **Frontend Development:**
 
     - **React Application:**
       Create a new React application using Create React App.
@@ -62,7 +62,7 @@ This project encapsulates the full lifecycle of a modern web application, from d
       Test the application locally to ensure it works as expected.
       Build the production version of the React app using npm run build.
 
-# 2. **Infrastructure as Code with Terraform:**
+2.  **Infrastructure as Code with Terraform:**
 
     - **AWS Configuration:**
       Set up AWS credentials and configure the AWS CLI.
@@ -82,7 +82,7 @@ This project encapsulates the full lifecycle of a modern web application, from d
       Configure Route 53 for domain name management.
       Set up CloudFront for content delivery and ACM for SSL certificates.
 
-# 3. **Deploying Infrastructure:**
+3.  **Deploying Infrastructure:**
 
     - **Terraform Deployment:**
       Initialize Terraform with terraform init.
@@ -90,7 +90,7 @@ This project encapsulates the full lifecycle of a modern web application, from d
       Plan the deployment with terraform plan.
       Apply the deployment with terraform apply -auto-approve.
 
-# 4. **Server Configuration:**
+4.  **Server Configuration:**
 
     - **SSH into EC2 Instance:**
       Connect to your EC2 instance using the SSH key pair.
@@ -156,13 +156,13 @@ This project encapsulates the full lifecycle of a modern web application, from d
       sudo systemctl restart nginx
       ```
 
-# 5. **Verify Deployment:**
+5.  **Verify Deployment:**
 
     - Access your website via the public IP of your EC2 instance or the configured domain name.
 
     - Ensure that the application is accessible and routes work correctly.
 
-# 6. **DNS Configuration:**
+6.  **DNS Configuration:**
 
     - Ensure that your Route 53 records are correctly pointing to the CloudFront distribution.
 
