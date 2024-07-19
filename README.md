@@ -1,6 +1,6 @@
 # Architecture
 
-<img src="src/assets/images/ProjectBlogArch.png" alt="User-Provisioning-Script Architecture" width="500"/>
+<img src="src/assets/images/ProjectBlogArch.png" alt="User-Provisioning-Script Architecture" width="600"/>
 
 ## Table of Contents
 
